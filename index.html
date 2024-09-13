@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="index.css" />
     <script type="module" src="index.js"></script>
   </head>
   <body>
-    <h1>Kodeloftets Barometer</h1>
+    <h1 class="raised padding-medium">Kodeloftets Barometer</h1>
 
-    <p>Hvor gøy er sommerfesten</p>
+    <p class="sunken padding-medium">Hvor gøy var</p>
 
-    <div>
-      <button id="button-a">Kunne vært pener vær</button>
-      <button id="button-b">Velkomst drinken var god</button>
-      <button id="button-c">Når begynner lekene</button>
+    <div class="flex-column gap-small">
+      <button
+        class="bg-color-a padding-medium rounded raised hover:brighten active:sunken"
+        id="button-a"
+      >
+        Kunne vært pener vær
+      </button>
+      <button
+        class="bg-color-b padding-medium rounded raised hover:brighten active:sunken"
+        id="button-b"
+      >
+        Velkomst drinken var god
+      </button>
+      <button
+        class="bg-color-c padding-medium rounded raised hover:brighten active:sunken"
+        id="button-c"
+      >
+        Når begynner lekene
+      </button>
     </div>
 
     <a id="result-link">Result</a>

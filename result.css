@@ -1,20 +1,8 @@
 .container {
-    display: flex;
-    align-items: end;
+  display: flex;
+  align-items: end;
 }
 
 .coulumn {
-    width: 100px;
-}
-
-#choice-a {
-    background-color: red;
-}
-
-#choice-b {
-    background-color: green;
-}
-
-#choice-c {
-    background-color: blue;
+  width: 100px;
 }

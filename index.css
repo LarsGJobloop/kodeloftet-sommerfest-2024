@@ -1,46 +1,69 @@
-* {
-  box-sizing: border-box;
+/* Overskrive standard CSS */
+button {
+  border: none;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+/* Fargerike Ord */
+:root {
+  --color-choice-a: rgb(250, 149, 77);
+  --color-choice-b: rgb(81, 205, 81);
+  --color-choice-c: rgb(112, 112, 246);
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+.bg-color-a {
+  background-color: var(--color-choice-a);
 }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
+.bg-color-b {
+  background-color: var(--color-choice-b);
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+.bg-color-c {
+  background-color: var(--color-choice-c);
 }
 
-main {
+/* Ord for størrelse */
+.text-large {
+  font-size: large;
+}
+
+.padding-medium {
   padding: 1rem;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+/* Ord for form */
+.rounded {
+  border-radius: 12px;
+}
+
+.raised {
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2),
+    inset 1px 4px 1px rgba(255, 255, 255, 0.1);
+}
+
+.sunken {
+  box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.active\:sunken:active {
+  box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Ord for layout */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-small {
+  gap: 1rem;
+}
+
+/* Ord for effekter */
+.hover\:brighten:hover {
+  filter: brightness(1.2);
 }
