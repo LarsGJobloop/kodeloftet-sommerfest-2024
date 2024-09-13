@@ -1,21 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <title>Other page</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="result.css" />
     <script type="module" src="result.js"></script>
+
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- Main Graph Container -->
-    <div class="container">
-      <!-- Result A -->
-      <div id="choice-a" class="coulumn"></div>
-      <!-- Result B -->
-      <div id="choice-b" class="coulumn"></div>
-      <!-- Result C -->
-      <div id="choice-c" class="coulumn"></div>
-    </div>
+
+  <body class="min-height-screen layout-three-parter">
+    <header class="bg-primary floating-md text-center padding-sm">
+      <h1>Kodeloftets Barometer</h1>
+    </header>
+    <!-- Main Chart Container -->
+    <main class="margin-md">
+      <div class="container bg-neutral sunken-sm rounded-md overflow-hidden">
+        <!-- Result A -->
+        <div id="choice-a" class="column">
+          <div
+            class="column-fill bg-choice-a raised-sm animate:grow hover:brighten"
+          ></div>
+        </div>
+        <!-- Result B -->
+        <div id="choice-b" class="column">
+          <div
+            class="column-fill bg-choice-b raised-sm animate:grow hover:brighten"
+          ></div>
+        </div>
+        <!-- Result C -->
+        <div id="choice-c" class="column">
+          <div
+            class="column-fill bg-choice-c raised-sm animate:grow hover:brighten"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="padding-sm flex gap-lg justify-center">
+      <a
+        class="rounded-md raised-md bg-accent cursor:pointer padding-sm hover:glowing-md"
+        onclick="history.back()"
+        >Back</a
+      >
+
+      <button
+        class="rounded-md raised-md bg-accent padding-sm hover:glowing-md"
+      >
+        Submit
+      </button>
+    </footer>
   </body>
 </html>

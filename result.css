@@ -1,20 +1,19 @@
 .container {
-    display: flex;
-    align-items: end;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  justify-items: center;
+
+  padding: 1rem 1rem 0px 1rem;
 }
 
-.coulumn {
-    width: 100px;
+.column {
+  width: 80%;
+  display: grid;
+  align-items: end;
 }
 
-#choice-a {
-    background-color: red;
-}
-
-#choice-b {
-    background-color: green;
-}
-
-#choice-c {
-    background-color: blue;
+.column-fill {
+  border-radius: 10px 10px 0px 0px;
 }

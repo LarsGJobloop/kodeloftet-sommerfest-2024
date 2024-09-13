@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
-    <title>Home</title>
+    <title>Kodeloftets Barometer</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="index.css" />
     <script type="module" src="index.js"></script>
+
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Kodeloftets Barometer</h1>
 
-    <p>Hvor gøy er sommerfesten</p>
+  <body class="min-height-screen layout-three-parter">
+    <header class="bg-primary floating-md text-center padding-sm">
+      <h1>Kodeloftets Barometer</h1>
+    </header>
 
-    <div>
-      <button id="button-a">Kunne vært pener vær</button>
-      <button id="button-b">Velkomst drinken var god</button>
-      <button id="button-c">Når begynner lekene</button>
-    </div>
+    <main class="padding-lg">
+      <p
+        class="question sunken-sm bg-neutral rounded-md text-center padding-lg"
+      >
+        Hvor gøy er sommerfesten
+      </p>
 
-    <a id="result-link">Result</a>
+      <div class="container">
+        <button
+          class="padding-sm raised-md bg-choice-a rounded-md active:sunken-sm cursor:pointer change-quickly hover:brighten"
+          id="a"
+        >
+          Kunne vært penere vær
+        </button>
+        <button
+          class="padding-sm raised-md bg-choice-b rounded-md active:sunken-sm cursor:pointer change-quickly hover:brighten"
+          id="b"
+        >
+          Velkomst drinken var god
+        </button>
+        <button
+          class="padding-sm raised-md bg-choice-c rounded-md active:sunken-sm cursor:pointer change-quickly hover:brighten"
+          id="c"
+        >
+          Når begynner lekene?
+        </button>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-center padding-md">
+      <a
+        class="bg-accent raised-sm rounded-md padding-sm cursor:pointer blurred change-quickly"
+        id="result-link"
+        >Result</a
+      >
+    </footer>
   </body>
 </html>

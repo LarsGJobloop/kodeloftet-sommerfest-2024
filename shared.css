@@ -1,0 +1,179 @@
+/* Colorful words */
+:root {
+  --color-primary: rgb(255, 238, 216);
+  --color-accent: rgba(0, 255, 255, 0.4);
+  --color-neutral: rgba(128, 128, 128, 0.5);
+
+  /* These are rather unique for our application */
+  --color-choice-a: rgb(204, 81, 194);
+  --color-choice-b: rgb(243, 183, 109);
+  --color-choice-c: rgb(46, 148, 237);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-neutral {
+  background-color: var(--color-neutral);
+}
+
+.bg-choice-a {
+  background-color: var(--color-choice-a);
+}
+
+.bg-choice-b {
+  background-color: var(--color-choice-b);
+}
+
+.bg-choice-c {
+  background-color: var(--color-choice-c);
+}
+
+/* Words for describing elements characteristics */
+.raised-sm {
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1),
+    inset 1px 2px 4px 2px rgba(255, 255, 255, 0.1);
+}
+
+.raised-md {
+  box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.2),
+    inset 1px 2px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.sunken-sm {
+  box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sunken-md {
+  box-shadow: inset 1px 2px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.floating-md {
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active\:sunken-sm:active {
+  box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.glowing-sm {
+  box-shadow: 0px 0px 8px 2px rgba(82, 15, 190, 0.3);
+}
+
+.glowing-md {
+  box-shadow: 0px 0px 12px 4px rgba(82, 15, 190, 0.5);
+}
+
+.hover\:glowing-md:hover {
+  box-shadow: 0px 0px 12px 4px rgba(82, 15, 190, 0.5);
+}
+
+.brighten {
+  filter: brightness(1.3);
+}
+
+.hover\:brighten:hover {
+  filter: brightness(1.3);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Words describing shapes */
+.rounded-md {
+  border-radius: 8px;
+}
+
+.padding-sm {
+  padding: 0.5rem;
+}
+
+.padding-md {
+  padding: 1rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.margin-md {
+  padding: 1rem;
+}
+
+.min-height-screen {
+  min-height: 100vh;
+}
+
+/* Words for layouts */
+.layout-three-parter {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-sm {
+  gap: 1rem;
+}
+
+.gap-md {
+  gap: 2rem;
+}
+
+.gap-lg {
+  gap: 4rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Stateful Words */
+.blurred {
+  filter: blur(4px);
+}
+
+/* Positional words */
+.text-center {
+  text-align: center;
+}
+
+/* Words describing movement */
+.change-quickly {
+  transition: all 75ms ease-in-out;
+}
+
+.change-slowly {
+  transition: all 400ms ease-in-out;
+}
+
+.animate\:grow {
+  animation: grow 10s cubic-bezier(0.19, 0.46, 0.6, 0.95) forwards;
+}
+
+@keyframes grow {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+/* Words for changing the cursor */
+.cursor\:pointer {
+  cursor: pointer;
+}
